@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+		targetNamespace="http://www.volodko.epam.by/papers"
+		xmlns:tns="http://www.volodko.epam.by/papers"
+		elementFormDefault="qualified">
+
+	<element name="paper" type="tns:Paper" abstract="true"/>
+	<element name="newspaper" type="tns:Newspaper" substitutionGroup="tns:paper"/>
+	<element name="magazine" type="tns:Magazine" substitutionGroup="tns:paper"/>
+	<element name="papers">
+		<complexType>
+			<sequence>
+				<element ref="tns:paper"
+						 minOccurs="1"
+						 maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="Paper">
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="subscription-index" type="tns:IndexID"/>
+			<element name="paper-properties" type="tns:PaperProperties"/>
+			<element name="circulation" type="positiveInteger"/>
+		</sequence>
+		<attribute name="website" type="tns:Website"/>
+		<attribute name="age-category" type="tns:AgeCategory" use="required"/>
+	</complexType>
+
+	<complexType name="Newspaper">
+		<complexContent>
+			<extension base="tns:Paper">
+				<sequence>
+					<element name="color" type="boolean" default = "false"/>
+					<element name="frequency" type="tns:Frequency"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="Magazine">
+		<complexContent>
+			<extension base="tns:Paper">
+				<sequence>
+					<element name="direction" type="tns:Direction"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="PaperProperties">
+		<sequence>
+			<element name="issue" type="positiveInteger"/>
+			<element name="pages" type="positiveInteger"/>
+			<element name="price" type="tns:Price"/>
+			<element name="issue-date" type="date"/>
+		</sequence>
+	</complexType>
+
+	<simpleType name="Website">
+		<restriction base="string">
+			<pattern value="www\.\w{2,20}\.\p{L}{2,3}"/>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="AgeCategory">
+		<restriction base="string">
+			<enumeration value="adult"/>
+			<enumeration value="child"/>
+			<enumeration value="teenager"/>
+			<enumeration value="anyone"/>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="IndexID">
+		<restriction base="ID">
+			<pattern value="i\d{5}"/>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="Price">
+		<restriction base="double">
+			<minInclusive value="0"/>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="Frequency">
+		<restriction base="string">
+			<enumeration value="daily"/>
+			<enumeration value="weekly"/>
+			<enumeration value="monthly"/>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="Direction">
+		<restriction base="string">
+			<enumeration value="sport"/>
+			<enumeration value="gaming"/>
+			<enumeration value="erotic"/>
+			<enumeration value="entertainment"/>
+			<enumeration value="science"/>
+			<enumeration value="training"/>
+			<enumeration value="health"/>
+		</restriction>
+	</simpleType>
+</schema>

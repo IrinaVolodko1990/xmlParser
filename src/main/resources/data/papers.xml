@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<papers xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+        xmlns ="http://www.volodko.epam.by/papers"
+        xsi:schemaLocation = "http://www.volodko.epam.by/papers papers.xsd">
+
+<newspaper age-category="anyone" website="www.sb.by">
+    <name>Советская Беларусь</name>
+    <subscription-index>i45891</subscription-index>
+    <paper-properties>
+        <issue>1814</issue>
+        <pages>22</pages>
+        <price>2.15</price>
+        <issue-date>2021-11-07</issue-date>
+    </paper-properties>
+    <circulation>50000</circulation>
+    <color>false</color>
+    <frequency>daily</frequency>
+</newspaper>
+
+<newspaper age-category="anyone" website="www.aif.by">
+<name>Аргументы И Факты</name>
+<subscription-index>i13137</subscription-index>
+<paper-properties>
+    <issue>1540</issue>
+    <pages>28</pages>
+    <price>2.60</price>
+    <issue-date>2021-11-04</issue-date>
+</paper-properties>
+<circulation>60000</circulation>
+<color>true</color>
+<frequency>weekly</frequency>
+</newspaper>
+
+<newspaper  website="www.vb.by" age-category="anyone">
+<name>Вечерний Брест</name>
+<subscription-index>i78013</subscription-index>
+<paper-properties>
+    <issue>3804</issue>
+    <pages>16</pages>
+    <price>1.45</price>
+    <issue-date>2021-11-07</issue-date>
+</paper-properties>
+<circulation>17000</circulation>
+<color>true</color>
+<frequency>daily</frequency>
+</newspaper>
+
+<newspaper age-category="adult">
+<name>Детективная Газета</name>
+<subscription-index>i15038</subscription-index>
+<paper-properties>
+    <issue>1028</issue>
+    <pages>28</pages>
+    <price>3.70</price>
+    <issue-date>2021-10-12</issue-date>
+</paper-properties>
+<circulation>55000</circulation>
+<color>true</color>
+<frequency>monthly</frequency>
+</newspaper>
+
+<newspaper age-category="teenager">
+<name>Знамя Юности</name>
+<subscription-index>i18403</subscription-index>
+<paper-properties>
+    <issue>780</issue>
+    <pages>20</pages>
+    <price>1.70</price>
+    <issue-date>2021-10-29</issue-date>
+</paper-properties>
+<circulation>12000</circulation>
+<color>true</color>
+<frequency>weekly</frequency>
+</newspaper>
+
+<newspaper age-category="anyone">
+<name>Навука</name>
+<subscription-index>i17038</subscription-index>
+<paper-properties>
+    <issue>386</issue>
+    <pages>28</pages>
+    <price>2.80</price>
+    <issue-date>2021-11-02</issue-date>
+</paper-properties>
+<circulation>15000</circulation>
+<color>true</color>
+<frequency>weekly</frequency>
+</newspaper>
+
+<newspaper age-category="anyone">
+<name>Вяжем шьем вышиваем</name>
+<subscription-index>i19025</subscription-index>
+<paper-properties>
+    <issue>487</issue>
+    <pages>36</pages>
+    <price>4.00</price>
+    <issue-date>2021-11-02</issue-date>
+</paper-properties>
+<circulation>18000</circulation>
+<color>true</color>
+<frequency>weekly</frequency>
+</newspaper>
+
+<newspaper age-category="teenager" website="www.pvz.by">
+<name>Переходный возраст</name>
+<subscription-index>i63192</subscription-index>
+<paper-properties>
+    <issue>780</issue>
+    <pages>40</pages>
+    <price>4.20</price>
+    <issue-date>2021-11-03</issue-date>
+</paper-properties>
+<circulation>18000</circulation>
+<color>true</color>
+<frequency>weekly</frequency>
+</newspaper>
+<magazine age-category="anyone" website="www.igromania.ru">
+<name>ИгрOK</name>
+<subscription-index>i76398</subscription-index>
+<paper-properties>
+    <issue>1548</issue>
+    <pages>208</pages>
+    <price>9.00</price>
+    <issue-date>2021-11-06</issue-date>
+</paper-properties>
+<circulation>180000</circulation>
+<direction>gaming</direction>
+</magazine>
+
+<magazine age-category="anyone">
+<name>Speak English</name>
+<subscription-index>i87954</subscription-index>
+<paper-properties>
+    <issue>450</issue>
+    <pages>110</pages>
+    <price>8.00</price>
+    <issue-date>2021-11-02</issue-date>
+</paper-properties>
+<circulation>28000</circulation>
+<direction>training</direction>
+</magazine>
+
+<magazine age-category="adult">
+<name>Playboy</name>
+<subscription-index>i18390</subscription-index>
+<paper-properties>
+    <issue>3548</issue>
+    <pages>115</pages>
+    <price>23.00</price>
+    <issue-date>2021-11-01</issue-date>
+</paper-properties>
+<circulation>240000</circulation>
+<direction>erotic</direction>
+</magazine>
+
+<magazine age-category="child">
+<name>Мурзилка</name>
+<subscription-index>i12380</subscription-index>
+<paper-properties>
+    <issue>511</issue>
+    <pages>32</pages>
+    <price>6.50</price>
+    <issue-date>2021-10-28</issue-date>
+</paper-properties>
+<circulation>32000</circulation>
+<direction>entertainment</direction>
+</magazine>
+
+<magazine age-category="teenager">
+<name>Cool</name>
+<subscription-index>i20056</subscription-index>
+<paper-properties>
+    <issue>1548</issue>
+    <pages>63</pages>
+    <price>8.50</price>
+    <issue-date>2021-10-08</issue-date>
+</paper-properties>
+<circulation>43000</circulation>
+<direction>entertainment</direction>
+</magazine>
+
+<magazine website="www.bolshoisport.ru" age-category="anyone" >
+<name>Большой Спорт</name>
+<subscription-index>i12354</subscription-index>
+<paper-properties>
+    <issue>240</issue>
+    <pages>150</pages>
+    <price>7.00</price>
+    <issue-date>2021-11-02</issue-date>
+</paper-properties>
+<circulation>70000</circulation>
+<direction>sport</direction>
+</magazine>
+
+<magazine age-category="anyone">
+<name>Медецинский вестник</name>
+<subscription-index>i14567</subscription-index>
+<paper-properties>
+    <issue>580</issue>
+    <pages>23</pages>
+    <price>4.00</price>
+    <issue-date>2021-11-02</issue-date>
+</paper-properties>
+<circulation>70000</circulation>
+<direction>health</direction>
+</magazine>
+
+<magazine age-category="anyone" website="www.internauka.org">
+<name>Интернаука</name>
+<subscription-index>i45781</subscription-index>
+<paper-properties>
+    <issue>360</issue>
+    <pages>68</pages>
+    <price>23.50</price>
+    <issue-date>2021-11-01</issue-date>
+</paper-properties>
+<circulation>280000</circulation>
+<direction>science</direction>
+</magazine>
+</papers>
